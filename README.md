@@ -1,2 +1,2 @@
 # to-do-list_project
-a to do list manager
+A to do list manager
