@@ -1,0 +1,7 @@
+the to do list should have the following things 
+1.create a task 
+2.save a task
+3.checkbox
+4.delete a task
+5.list of completed tasks
+
