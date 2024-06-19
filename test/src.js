@@ -1,3 +1,3 @@
-let name="sreyas";
+name="sreyas" : String;
 console.log(name);
 
