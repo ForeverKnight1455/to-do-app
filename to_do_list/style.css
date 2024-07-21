@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border-style: ridge;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(102, 102, 254),rgba(0, 209, 80, 0.954));
+    border-radius:10px;
+}
+
+button {
+    background-color:peachpuff;
+}
+button:hover {
+    background-color:rgb(8, 240, 8);
+}
+
+.todo-list {
+    border-radius:10px;
+}
+
+li {
+    list-style-type:none;
+    padding:10px;
+    align-items:center;
+}
