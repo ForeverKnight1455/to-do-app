@@ -9,7 +9,7 @@ body {
 }
 
 button {
-    background-color:peachpuff;
+    background-color:rgb(255, 218, 185);
 }
 button:hover {
     background-color:rgb(8, 240, 8);
