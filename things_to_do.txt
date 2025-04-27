@@ -1,5 +1,7 @@
-add task
-delete task
-checkbox for task
-list of completed tasks
-list of incomplete tasks
+things i want to implement in this to do list
+    1.to do list
+        a.add task
+        b.mark task as done 
+        c.delete a task
+    2.remainder 
+    3.calender function
