@@ -19,5 +19,7 @@ function addtask(){
 taskcontainer.addEventListener("click",function(e){
     if(e.target.tagname === 'li'){
         e.target.classList.toggle("li.checked");
-    }else if(e.target.tagname == 'button')
+    }else if(e.target.tagname == 'button'){
+
+    }
 })
