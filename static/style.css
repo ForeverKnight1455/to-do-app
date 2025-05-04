@@ -1,92 +1,120 @@
 *{
-    margin:0;
     padding:0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing:border-box;
+    margin:0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.container{
-    width:100%;
-    min-height:100vh;
-    padding: 20px;
-    display:flex;
-    justify-content:center;
-    background:linear-gradient(135deg,purple,blue);
-}
-
-.todoapp{
-    background-color:white;
-    margin:100px 100px 100px 100px;
-    border-radius: 10px;
-    padding:30px 10px 30px 10px;
-    display:grid;
-    justify-content:center;
-}   
-
-.todolist h2{
-    align-self:auto;
-}
-
-.inputbox{
-    display:flex;
-    background-color: rgb(221, 217, 217);
-    border-radius:10px;
-    height:45px;
-}
-
-
-#inputfield{
-    border-radius:10px;
-    width:90vh;
-    border:none;
-    background:transparent;
-    outline:none;
-    padding:0px 0px 0px 10px;
-}
-
-#addbutton{
-    border-radius:10px;
-    padding:10px 10px 10px 10px;
-    background-color:orangered;
+h1{
+    text-align: center;
     color:white;
-    cursor:pointer;
-    border:none;
 }
 
-.tasks{
-    padding:10px;
+main{
+    background:linear-gradient(135deg,red,blue);
+    height: 100vh;
+    width: 100wh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
 }
 
-.tasks li{
-    padding:10px;
+.inputcontainer{
+    align-self: center;
     background-color: white;
-    list-style:none;
-    cursor:pointer;
     display:flex;
     justify-content: space-between;
-    border-style:ridge;
-    border-radius:10px;
-    user-select:none;
+    align-items:center;
+    padding:10px;
+    width: 40%;
+    border-radius: 1rem;
 }
-
-.tasks #deletetask{
-    border:none;
+#inputbox{
     background:transparent;
-    height:20px;
-    width:20px;
-    border-radius:50%;
+    outline:none;
+    border:none;
+    width: calc(100% - 100px);
 }
-
-.tasks #deletetask:hover{
-    background-color:rgb(221, 217, 217);
+.taskcontainer{
+    align-self: center;
+    display:flex;
+    justify-content: space-around;
+    min-height: 50vh;
+    flex-direction:row;
+    gap:10px;
+}
+.pending{
+    background-color:white;
+    padding:10px;
+    width:45vw;
+    min-height: 50vh;
+    border-radius: 1rem;
+    overflow-y:auto;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    p{
+        text-align:center;
+        font: size 1rem;
+        font-weight: bolder;
+    }
+}
+.completed{
+    background-color:white;
+    padding:10px;
+    width:45vw;
+    border-radius: 1rem;
+    overflow-y:auto;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    p{
+        text-align:center;
+        font-size:1rem;
+        font-weight: bolder;
+    }
+}
+li{
+    font-size:large;
+    padding:10px;
+    list-style: none;
+    text-align:center;
+    border:1px groove black;
+    display:flex;
+    justify-content: space-between;
+    align-self: center;
+    user-select:none;
+    cursor:pointer;
+    border-radius: 1rem;
+    margin:10px;
+}
+#addbtn{
+    border-radius: 1rem;
+    padding:10px;
+    background-color:green;
     color:white;
+    
 }
-
-.checked #task_item{
+#addbtn:hover{
+    background-color:greenyellow;
+    color:black;
+}
+.deletebtn{
+    border-radius: 1rem;
+    padding:10px;
+    background-image:url(../images/xmark-solid.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: white;
+    border:none;
+}
+.deletebtn:hover{
+    border:1px;
+    background-color: lightgrey;
+}
+.check{
     text-decoration:line-through;
 }
-
-.unchecked #task_item{
+.uncheck{
     text-decoration:none;
 }
-
