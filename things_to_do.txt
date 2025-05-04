@@ -3,5 +3,5 @@ things i want to implement in this to do list
         a.add task
         b.mark task as done 
         c.delete a task
-    2.remainder 
+    2.timer for the task
     3.calender function
